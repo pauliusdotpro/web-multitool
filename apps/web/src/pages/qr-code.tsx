@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useRef } from 'react'
 import { QRCodeSVG } from 'qrcode.react'
 import React, { CSSProperties } from 'react';
@@ -104,6 +102,7 @@ export default function EnhancedQRCodeGenerator() {
                                 <SelectValue placeholder="Select a frame" />
                             </SelectTrigger>
                             <SelectContent>
+
                                 <SelectItem value="none">No Frame</SelectItem>
                                 <SelectItem value="simple">Simple Frame</SelectItem>
                                 <SelectItem value="rounded">Rounded Frame</SelectItem>

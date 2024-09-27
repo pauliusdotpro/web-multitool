@@ -7,11 +7,8 @@ WORKDIR /app
 # Copy the package.json and package-lock.json from the root
 COPY package.json package-lock.json ./
 
-# Copy the workspace config (if you have a .npmrc or similar)
-COPY .npmrc ./
-
 # Install the root dependencies
-RUN npm instal --workspaces
+RUN npm install --workspaces
 
 # Copy the entire monorepo
 COPY . .

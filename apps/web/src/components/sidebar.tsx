@@ -13,6 +13,7 @@ const navItems = [
     { name: 'QR Code', href: '/qr-code', icon: QrCode },
     { name: 'Text Analysis', href: '/text-analysis', icon: FileText },
     { name: 'Unix Epoch Converter', href: '/unix-epoch-converter', icon: FileText },
+    { name: 'Image Converter', href: '/image-converter', icon: FileText },
 ]
 
 interface SidebarProps {

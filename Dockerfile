@@ -7,11 +7,11 @@ WORKDIR /app
 # Copy the package.json and package-lock.json from the root
 COPY package.json package-lock.json ./
 
-# Install the root dependencies
-RUN npm install --workspaces
-
 # Copy the entire monorepo
 COPY . .
+
+# Install the root dependencies
+RUN npm install --workspaces
 
 # Navigate to the Next.js app directory
 WORKDIR /app/apps/web

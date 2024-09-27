@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react'
 import { QRCodeSVG } from 'qrcode.react'
+import React, { CSSProperties } from 'react';
 import { toPng } from 'html-to-image'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -10,7 +11,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { AlertCircle, Download } from "lucide-react"
 
-const frames = {
+const frames: Record<any, CSSProperties> = {
     none: { border: "none", padding: "0" },
     simple: { border: "4px solid black", padding: "16px" },
     rounded: { border: "4px solid black", borderRadius: "15px", padding: "16px" },
@@ -41,6 +42,7 @@ const frames = {
         background: "white"
     }
 }
+
 
 export default function EnhancedQRCodeGenerator() {
     const [inputText, setInputText] = useState('')
@@ -79,6 +81,7 @@ export default function EnhancedQRCodeGenerator() {
         }
     }
 
+    // @ts-ignore
     // @ts-ignore
     return (
         <div className="container mx-auto p-4">

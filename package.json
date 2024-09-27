@@ -8,7 +8,7 @@
     "start": "cd apps/web && npm run start",
     "lint": "cd apps/web && npm run lint"
   },
-  "packages": [
+  "workspaces": [
     "apps/web"
   ],
   "keywords": [],

@@ -1,0 +1,15 @@
+{
+  "name": "web-multitool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd apps/web && npm run dev"
+  },
+  "packages": [
+    "apps/web"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

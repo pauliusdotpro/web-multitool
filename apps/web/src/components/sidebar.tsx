@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { QrCode, FileText, Menu } from 'lucide-react'
+import { QrCode, FileText, Menu, Github, FileJson, Key, Image, Clock, CodeXml, Network } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
 import { Button } from "@/components/ui/button"
@@ -12,8 +12,14 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 const navItems = [
     { name: 'QR Code', href: '/qr-code', icon: QrCode },
     { name: 'Text Analysis', href: '/text-analysis', icon: FileText },
-    { name: 'Unix Epoch Converter', href: '/unix-epoch-converter', icon: FileText },
-    { name: 'Image Converter', href: '/image-converter', icon: FileText },
+    { name: 'Unix Epoch Converter', href: '/unix-epoch-converter', icon: Clock },
+    { name: 'Image Converter', href: '/image-converter', icon: Image },
+    { name: 'JSON Formatter', href: '/json-formatter', icon: FileJson },
+    { name: 'Password Generator', href: '/password-generator', icon: Key },
+    { name: 'API Tester', href: '/api-tester', icon: Network },
+    { name: 'Base64 Convert', href: '/base64', icon: FileText },
+    { name: 'XML Json Converter', href: '/xml-json-converter', icon: CodeXml },
+    { name: 'GitHub Repository', href: 'https://github.com/pauliusdotpro/web-multitool', icon: Github },
 ]
 
 interface SidebarProps {

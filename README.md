@@ -1,4 +1,4 @@
-# Tools by Paulius
+# Tools by Paulius.Pro
 
 Welcome to the **Paulius Tools** repository! This project is a collection of handy tools for everyday needs, built with modern web technologies. It includes utilities for QR code generation, text analysis, JSON formatting, and much more. The website is designed using **Next.js 14** with **ShadCN** for the UI components and layout.
 
